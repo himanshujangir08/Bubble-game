@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Roboto+Condensed&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-color: #c8b6ff;
+    position: relative;
+}
+
+.bubble {
+    position: absolute;
+    top: 8.5%;
+    left: 7%;
+    width: 85%;
+    height: 85vh;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    overflow: hidden;
+    box-shadow: 5px 5px 10px #5a5a5a,
+        -5px -5px 10px #ffffff;
+}
+
+.top-border {
+    height: 100px;
+    background: rgba(255, 255, 255, 0.62);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15.7px);
+    -webkit-backdrop-filter: blur(15.7px);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 14vw;
+}
+
+.elem {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.elem h2 {
+    text-align: center;
+    margin: 1.3vw 1vw;
+    font-size: 1.7vw;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c8b6ff;
+    padding: .2vw 1vw;
+    margin: 1vw 0;
+    font-size: 2vw;
+    border-radius: 10px;
+    position: relative;
+}
+
+@media (max-width: 630px) {
+    .top-border {
+        padding: 0 6vw;
+    }
+
+    .elem h2 {
+        font-size: 3vw;
+    }
+
+    .box {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-border {
+        padding: 0 4vw;
+    }
+
+    .elem h2 {
+        font-size: 4vw;
+    }
+
+    .box {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 380px) {
+    .top-border {
+        padding: 0 4vw;
+    }
+
+    .elem h2 {
+        font-size: 6vw;
+    }
+
+    .box {
+        font-size: 6vw;
+    }
+}
+
+.bottom-border {
+    width: 100%;
+    height: calc(85vh - 100px);
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.mini-bubble {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.78);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mini-bubble:hover{
+    background: rgba(255, 255, 255, 0.24);
+}
